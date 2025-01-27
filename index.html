@@ -34,6 +34,87 @@
             height: 70px;
             /* Set the height */
         }
+        .about__title, .about__text p, .btn-shape-square{
+         text-align: left; /* Aligns the text to the left */
+         margin-left: 10%; /* Adjust the margin as needed to align both elements */
+        }
+
+        .about__title {
+         font-size: 2em; /* Adjust the font size as needed */
+         font-weight: bold; /* Make the headline bold */
+        }
+
+        .about__text p {
+         font-size: 1em; /* Adjust the font size as needed */
+         margin-top: 10px; /* Add some space between the headline and paragraph */
+        }
+        .btn-shape-square {
+         margin-top: 10px; /* Add some space between the paragraph and button */
+        }
+        /* Home Banner Area */
+        #home-banner .home-banner-container {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #home-banner .single-slide {
+            height: 100vh; /* Make the slider full height */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #home-banner .slider-content {
+            padding: 50px 15px;
+            color: #fff;
+            text-align: center;
+        }
+
+        #home-banner .slider-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #home-banner .slider-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        #home-banner .slider-content .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #home-banner .slider-content .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Testimonial Area */
+        .testimonial-area .container-fluid {
+            max-width: 1140px; /* Adjust as needed */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .element-carousel-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .element-carousel {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 
@@ -98,66 +179,52 @@
         <!-- Main Wrapper Start -->
         <main class="main-content-wrapper">
             <!-- Slider area Start -->
-            <section class="homepage-slider-wrapper mb--95">
-                <div class="element-carousel nav-vertical-center nav-style-1"
-                    data-slick-options='{ "arrows": true, "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "fa fa-angle-left" }, "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "fa fa-angle-right" } }'>
-                    <div class="single-slide slider-height bg-overlay-black d-flex align-items-center"
-                        style="background-image: url(assets/img/dexter.jpg);background-size: cover; background-repeat: no-repeat;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 col-md-10 col-12">
-                                    <div class="slider-content">
-                                        <h1 class="mb--30 mb-xl--20" data-animation="fadeInUp" data-duration=".4s"
-                                            data-delay="1s">Best Solutions</h1>
-                                        <p class="mb--25" data-animation="fadeInUp" data-duration=".4s"
-                                            data-delay="1.2s">
-                                            At Dexter Cyber Labs, we pioneer cutting-edge web and mobile applications
-                                            while ensuring top-tier security solutions.
-                                            Empowering programmers and ethical hackers to prevent and detect cyber
-                                            threats,
-                                            we are your trusted partner in digital innovation and protection.
-                                        </p>
-                                        <a href="about.html" class="btn btn-shape-round btn-hover-1"
-                                            data-animation="fadeInUp" data-duration=".4s" data-delay="1.4s">Learn
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide slider-height bg-overlay-black d-flex align-items-center"
-                        style="background-image: url(assets/img/BG.jpg); background-size: cover; background-repeat: no-repeat;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 col-md-10 col-12">
-                                    <div class="slider-content">
-                                        <h1 class="heading__primary mb--30 mb-xl--20"><span
-                                                class="heading__primary--main" data-animation="fadeInUp"
-                                                data-duration=".4s" data-delay="1s">Best Company</span></h1>
-                                        <p class="mb--25" data-animation="fadeInUp" data-duration=".4s"
-                                            data-delay="1.2s">
-                                            We specialize in delivering transformative IT solutions designed to empower
-                                            your business for the future.
-                                        </p>
-                                        <a href="about.html" class="btn btn-shape-round btn-hover-1"
-                                            data-animation="fadeInUp" data-duration=".4s" data-delay="1.4s">Learn
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
+      <!-- Slider area Start -->
+     <!-- Slider area Start -->
+<section id="home-banner" class="homepage-slider-wrapper mb--95">
+    <div class="element-carousel nav-vertical-center nav-style-1"
+        data-slick-options='{ "arrows": true, "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "fa fa-angle-left" }, "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "fa fa-angle-right" } }'>
+        <div class="single-slide slider-height bg-overlay-black d-flex align-items-center"
+            style="background-image: url(assets/img/dexter.jpg); background-size: cover; background-repeat: no-repeat;">
+            <div class="container-fluid home-banner-container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 col-12">
+                        <div class="slider-content">
+                            <h1 class="mb--30 mb-xl--20" data-animation="fadeInUp" data-duration=".4s" data-delay="1s">Best Solutions</h1>
+                            <p class="mb--25" data-animation="fadeInUp" data-duration=".4s" data-delay="1.2s">At Dexter Cyber Labs, we pioneer cutting-edge web and mobile applications while ensuring top-tier security solutions. Empowering programmers and ethical hackers to prevent and detect cyber threats, we are your trusted partner in digital innovation and protection.</p>
+                            <a href="about.html" class="btn btn-shape-round btn-hover-1" data-animation="fadeInUp" data-duration=".4s" data-delay="1.4s">Learn More</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Slider area End -->
+            </div>
+        </div>
+        <div class="single-slide slider-height bg-overlay-black d-flex align-items-center"
+            style="background-image: url(assets/img/BG.jpg); background-size: cover; background-repeat: no-repeat;">
+            <div class="container-fluid home-banner-container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 col-12">
+                        <div class="slider-content">
+                            <h1 class="heading__primary mb--30 mb-xl--20"><span class="heading__primary--main" data-animation="fadeInUp" data-duration=".4s" data-delay="1s">Best Company</span></h1>
+                            <p class="mb--25" data-animation="fadeInUp" data-duration=".4s" data-delay="1.2s">We specialize in delivering transformative IT solutions designed to empower your business for the future.</p>
+                            <a href="about.html" class="btn btn-shape-round btn-hover-1" data-animation="fadeInUp" data-duration=".4s" data-delay="1.4s">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="slick-btn slick-prev" id="prevBtn"><i class="fa fa-angle-left"></i></button>
+    <button class="slick-btn slick-next" id="nextBtn"><i class="fa fa-angle-right"></i></button>
+    </section>
+    <!-- Slider area End -->
             <!-- About Area Start -->
-            <div class="mt-5">
+            <div class="mt-5" >
                 <div class="row no-gutters m-5">
                     <div class="col-lg-6 order-lg-2">
                         <div class="about-section">
                             <div class="about__content">
-                                <h2 class="about__title">We are the No 1 IT Company in Nigeria</h2>
-                                <div class="about__text mb--30">
+                                <h2 class="about__title text-left">We are the No 1 IT Company in Nigeria</h2>
+                                <div class="about__text mb-30">
                                     <p>Dexter Cyberlabs is more than a cybersecurity firm, we are a hub for
                                         innovation, research, and action.
                                         Our mission is to stay ahead of cyber threats, protect what matters,
@@ -165,7 +232,7 @@
                                         From small businesses to large enterprises,
                                         we offer tailored solutions to meet your unique security needs.</p>
                                 </div>
-                                <a href="#" class="btn btn-shape-square">Learn More</a>
+                                <a href="services.html" class="btn btn-shape-square">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -189,8 +256,7 @@
                             <div class="service__content">
                                 <h3 class="service__title color--white">INNOVATIVE APPLICATION DEVELOPMENT</h3>
                                 <p class="service__desc">Our team of expert programmers and researchers are dedicated to delivering applications 
-                                    that not only enhance functionality but also drive business growth.</p>
-                                <a href="#" class="btn btn-fullwidth btn-shape-square">Read More</a>
+                                    that not only enhance functionality but also drive business growth.</p> 
                             </div>
                         </div>
                     </div>
@@ -200,7 +266,7 @@
                                 <h3 class="service__title color--white">COMPREHENSIVE SECURITY SOLUTIONS</h3>
                                 <p class="service__desc">Our ethical hackers work tirelessly to identify vulnerabilities 
                                     and implement strategies,ensuring your company's digital assets are secure.</p>
-                                <a href="#" class="btn btn-fullwidth btn-shape-square">Read More</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -210,13 +276,12 @@
                                 <h3 class="service__title color--white">EXPERT RESEARCH AND DEVELOPMENT</h3>
                                 <p class="service__desc">By choosing Dexter Cyberlabs you gain access to a wealth of expertise 
                                     that keeps your business ahead of the curve in an ever-evolving digital landscape.</p>
-                                <a href="#" class="btn btn-fullwidth btn-shape-square">Read More</a>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Services Areas End -->
             <!-- Fun Fact Area Start -->
             <section class="funfact-area bg-color ptb--100 pt-sm--80 pb-sm--40" data-bgcolor="#f7f7f7">
@@ -252,80 +317,78 @@
             
             <!-- Fun Fact Area End -->
             <!-- Testimonial Area Start -->
-            <section class="testimonial-area pt--95 pt-lg--75 pt-md--65 pb--100 pb-lg--80 pb-md--70">
-                <div class="container-fluid">
-                    <div class="row justify-content-center mb--57 mb-md--47">
-                        <div class="col-xl-6 col-lg-8">
-                            <div class="section-title text-center">
-                                <h2>TESTIMONIALS</h2>
+            <!-- Testimonial Area Start -->
+<!-- Testimonial Area Start -->
+<section class="testimonial-area pt--95 pt-lg--75 pt-md--65 pb--100 pb-lg--80 pb-md--70">
+    <div class="container-fluid">
+        <div class="row justify-content-center mb--57 mb-md--47">
+            <div class="col-xl-6 col-lg-8">
+                <div class="section-title text-center">
+                    <h2>TESTIMONIALS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="element-carousel-wrapper">
+                    <div class="element-carousel"
+                        data-slick-options='{ "slidesToShow": 3, "spaceBetween": 30, "autoplay": true }'
+                        data-slick-responsive='[ {"breakpoint": 1200, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}} ]'>
+                        <div class="item">
+                            <div class="testimonial testimonial-style-2">
+                                <div class="testimonial__inner">
+                                    <figure class="testimonial__author--image"><img
+                                            src="assets/img/testimonial/black-pic.jpeg" alt="Client" /></figure>
+                                    <div class="testimonial__desc">
+                                        <p>"Working with Dexter Cyberlabs has been an absolute pleasure. 
+                                            Their team of experts is highly skilled and professional, 
+                                            always going above and beyond to meet our needs. 
+                                            The security solutions have been effective in preventing cyber threats, 
+                                            allowing us to focus on our core business activities."</p>
+                                    </div>
+                                    <div class="testimonial__author--name"><a href="#">John Okoye</a></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="element-carousel"
-                                data-slick-options='{ "slidesToShow": 3, "spaceBetween": 30, "autoplay": true }'
-                                data-slick-responsive='[ {"breakpoint": 1200, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}} ]'>
-                                <div class="item">
-                                    <div class="testimonial testimonial-style-2">
-                                        <div class="testimonial__inner">
-                                            <figure class="testimonial__author--image"><img
-                                                    src="assets/img/testimonial/black-pic.jpeg" alt="Client" /></figure>
-                                            <div class="testimonial__desc">
-                                                <p>"Working with DCL has been an absolute pleasure.
-                                                    Their team of experts is highly skilled and professional,
-                                                    always going above and beyond to meet our needs.
-                                                    The security solutions have been effective in preventing cyber
-                                                    threats,
-                                                    allowing us to focus on our core business activities."</p>
-                                            </div>
-                                            <div class="testimonial__author--name"><a href="#">John Okoye</a></div>
-                                        </div>
+                        <div class="item">
+                            <div class="testimonial testimonial-style-2">
+                                <div class="testimonial__inner">
+                                    <figure class="testimonial__author--image"><img
+                                            src="assets/img/testimonial/jennifer-pic.jpeg" alt="Client" /></figure>
+                                    <div class="testimonial__desc">
+                                        <p>"Dexter CyberLab has been a game-changer for our business. 
+                                            Their innovative web and mobile applications have streamlined our operations
+                                             and provided us with cutting-edge security solutions. 
+                                             We feel much more secure knowing that Dexter CyberLab is safeguarding our digital assets."</p>
                                     </div>
+                                    <div class="testimonial__author--name"><a href="#">Mariam Audu</a></div>
                                 </div>
-                                <div class="item">
-                                    <div class="testimonial testimonial-style-2">
-                                        <div class="testimonial__inner">
-                                            <figure class="testimonial__author--image"><img
-                                                    src="assets/img/testimonial/jennifer-pic.jpeg" alt="Client" />
-                                            </figure>
-                                            <div class="testimonial__desc">
-                                                <p>"Dexter CyberLab has been a game-changer for our business.
-                                                    Their innovative web and mobile applications have streamlined our
-                                                    operations
-                                                    and provided us with cutting-edge security solutions.
-                                                    We feel much more secure knowing that Dexter CyberLab is
-                                                    safeguarding our digital assets."</p>
-                                            </div>
-                                            <div class="testimonial__author--name"><a href="#">Mariam Audu</a></div>
-                                        </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial testimonial-style-2">
+                                <div class="testimonial__inner">
+                                    <figure class="testimonial__author--image"><img
+                                            src="assets/img/testimonial/creative-pic.jpeg" alt="Client" /></figure>
+                                    <div class="testimonial__desc">
+                                        <p>"I cannot recommend Dexter CyberLab enough. 
+                                            Their research centre is at the forefront of technology and innovation. 
+                                            The applications they developed for us are not only user-friendly but also incredibly secure. 
+                                            It's comforting to know that we have such a reliable partner in cyber security."</p>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimonial testimonial-style-2">
-                                        <div class="testimonial__inner">
-                                            <figure class="testimonial__author--image"><img
-                                                    src="assets/img/testimonial/creative-pic.jpeg" alt="Client" />
-                                            </figure>
-                                            <div class="testimonial__desc">
-                                                <p>"I cannot recommend Dexter CyberLab enough.
-                                                    Their research centre is at the forefront of technology and
-                                                    innovation.
-                                                    The applications they developed for us are not only user-friendly
-                                                    but also incredibly secure.
-                                                    It's comforting to know that we have such a reliable partner in
-                                                    cyber security."</p>
-                                            </div>
-                                            <div class="testimonial__author--name"><a href="#">Seun Amos</a></div>
-                                        </div>
-                                    </div>
+                                    <div class="testimonial__author--name"><a href="#">Seun Amos</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Testimonial Area End -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial Area End -->
+
+<!-- Testimonial Area End -->
         </main>
         <!-- Main Wrapper End -->
         <!-- Footer Start-->
@@ -518,6 +581,54 @@
     <script src="assets/js/vendor.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-</body>
+    <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.single-slide');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+
+    // Hide prev button on the first slide
+    if (index === 0) {
+      prevBtn.style.visibility = 'hidden';
+    } else {
+      prevBtn.style.visibility = 'visible';
+    }
+
+    // Hide next button on the last slide
+    if (index === slides.length - 1) {
+      nextBtn.style.visibility = 'hidden';
+    } else {
+      nextBtn.style.visibility = 'visible';
+    }
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  prevBtn.addEventListener('click', prevSlide);
+  nextBtn.addEventListener('click', nextSlide);
+
+  showSlide(currentSlide);
+  setInterval(nextSlide, 5000); // Change slide every 5 seconds
+ });
+
+    </script>
+ </body>
 
 </html>
